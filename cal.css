@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{    /*this is outer box*/
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 240, 246);
+    /* background: linear-gradient(to top right, rgb(243, 159, 159),rgb(146, 243, 243)); */
+    
+    /*! for center align of calculator-box we have to use 3 properties*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.calculator-box{   /*this is calculator box*/
+    width: 290px;
+    height: 460px;
+    background-color:  white;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: rgb(150, 148, 148) 1.95px 1.95px 2.6px;
+
+    /*! for center align of calculator-body we have to use 3 properties*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-box .calculator-body{ /*Inner body of calculator*/
+    width: 280px;
+    height:450px ;
+    border: transparent;
+    border-radius: 10px;
+    background: linear-gradient(to top right, rgb(248, 144, 144),rgb(124, 248, 248));
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
+
+}
+
+/* this is all about display*/
+.calculator-box .calculator-body .display{
+    width: 100%;
+    height: 30%;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    /*! for center alignment of input we have to use three properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* this is all about input field*/
+.calculator-box .calculator-body .display input{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: end;
+
+}
+
+/*!changing the color of placeholder in input filed*/
+::placeholder{
+    color: rgb(245, 245, 244);
+}
+
+
+/* this is all about buttons body*/
+.calculator-box .calculator-body .button{
+    width: 100%;
+    height: 66%;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+}
+
+
+
+
+/*now this is all about buttons*/
+.calculator-box .calculator-body .button .btn{
+    width: 20%;
+    height: 20%;
+    border: none;
+    border-radius: 50%;
+    margin-left: 9px;
+    background: #ffffff09;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(250, 247, 247);
+    /* font-size: 30px; */
+
+    
+}
+/*this is all about toggle button*/
+.bi{
+    font-size: 15px;
+}
+
+/* when we hover on button*/
+.calculator-box .calculator-body .button .btn:hover{
+    background-color: #ffffff09;
+    font-size: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
